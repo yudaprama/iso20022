@@ -34,7 +34,7 @@ func main() {
 
 ```
 
-## Message Types
+## Message Catalogs
 
 Message types covers ISO-20022 messages:
 
