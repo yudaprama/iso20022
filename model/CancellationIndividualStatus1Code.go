@@ -1,0 +1,3 @@
+package model
+
+type CancellationIndividualStatus1Code string

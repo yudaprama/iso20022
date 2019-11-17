@@ -1,0 +1,3 @@
+package model
+
+type SettlementTransactionCondition3Code string

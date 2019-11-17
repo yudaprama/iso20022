@@ -1,0 +1,3 @@
+package model
+
+type CorporateActionNotificationType2Code string

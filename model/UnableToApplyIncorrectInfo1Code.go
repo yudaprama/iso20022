@@ -1,0 +1,3 @@
+package model
+
+type UnableToApplyIncorrectInfo1Code string

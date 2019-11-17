@@ -1,0 +1,3 @@
+package model
+
+type SecuritiesSettlementStatus1Code string

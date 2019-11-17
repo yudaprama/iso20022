@@ -1,0 +1,3 @@
+package model
+
+type SecuritiesAccountPurposeType1Code string

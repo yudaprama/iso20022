@@ -1,0 +1,3 @@
+package model
+
+type ExternalEffectiveDateParameter1Code string

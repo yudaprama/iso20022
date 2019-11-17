@@ -1,0 +1,3 @@
+package model
+
+type ExternalMandateSuspensionReason1Code string

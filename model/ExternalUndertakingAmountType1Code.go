@@ -1,0 +1,3 @@
+package model
+
+type ExternalUndertakingAmountType1Code string

@@ -1,0 +1,3 @@
+package model
+
+type InvestmentFundTransactionType1Code string

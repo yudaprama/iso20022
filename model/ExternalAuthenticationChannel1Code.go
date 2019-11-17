@@ -1,0 +1,3 @@
+package model
+
+type ExternalAuthenticationChannel1Code string

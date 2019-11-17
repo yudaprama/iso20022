@@ -1,0 +1,3 @@
+package model
+
+type CardholderVerificationCapability3Code string

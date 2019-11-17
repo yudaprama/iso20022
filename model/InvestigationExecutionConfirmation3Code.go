@@ -1,0 +1,3 @@
+package model
+
+type InvestigationExecutionConfirmation3Code string

@@ -1,0 +1,3 @@
+package model
+
+type RejectedConfirmationStatusReason1Code string

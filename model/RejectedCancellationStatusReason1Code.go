@@ -1,0 +1,3 @@
+package model
+
+type RejectedCancellationStatusReason1Code string

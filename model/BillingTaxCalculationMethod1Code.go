@@ -1,0 +1,3 @@
+package model
+
+type BillingTaxCalculationMethod1Code string

@@ -1,0 +1,3 @@
+package model
+
+type ExternalTradeTransactionCondition1Code string

@@ -1,0 +1,3 @@
+package model
+
+type TaxableIncomePerShareCalculated2Code string

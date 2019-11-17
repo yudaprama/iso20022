@@ -1,0 +1,3 @@
+package model
+
+type PowerOfAttorneyLegalisation1Code string

@@ -1,0 +1,3 @@
+package model
+
+type PendingSettlementStatusReason1Code string

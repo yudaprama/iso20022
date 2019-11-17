@@ -1,0 +1,3 @@
+package model
+
+type CurrencyConversionResponse1Code string

@@ -1,0 +1,3 @@
+package model
+
+type UnderlyingProductIdentifier1Code string

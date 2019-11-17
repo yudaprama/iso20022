@@ -1,0 +1,3 @@
+package model
+
+type SettlementInstructionGeneration1Code string

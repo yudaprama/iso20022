@@ -1,0 +1,3 @@
+package model
+
+type PaymentModificationRejection1Code string

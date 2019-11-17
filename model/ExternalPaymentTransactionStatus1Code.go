@@ -1,0 +1,3 @@
+package model
+
+type ExternalPaymentTransactionStatus1Code string

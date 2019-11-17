@@ -1,0 +1,3 @@
+package model
+
+type PendingOpeningStatusReason1Code string

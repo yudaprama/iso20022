@@ -1,0 +1,3 @@
+package model
+
+type FinancialAssetTypeCategory1Code string

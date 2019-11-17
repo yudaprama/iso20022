@@ -1,0 +1,104 @@
+<FIToFICstmrCdtTrf>
+    <GrpHdr>
+        <MsgId>BBBB/150928-CCT/JPY/123</MsgId>
+        <CreDtTm>2015-09-28T16:00:00</CreDtTm>
+        <NbOfTxs>1</NbOfTxs>
+        <SttlmInf>
+            <SttlmMtd>COVE</SttlmMtd>
+            <InstgRmbrsmntAgt>
+                <FinInstnId>
+                    <BICFI>CCCCJPJT</BICFI>
+                </FinInstnId>
+            </InstgRmbrsmntAgt>
+            <InstdRmbrsmntAgt>
+                <FinInstnId>
+                    <BICFI>AAAAJPJT</BICFI>
+                </FinInstnId>
+            </InstdRmbrsmntAgt>
+        </SttlmInf>
+        <InstgAgt>
+            <FinInstnId>
+                <BICFI>BBBBUS33</BICFI>
+            </FinInstnId>
+        </InstgAgt>
+        <InstdAgt>
+            <FinInstnId>
+                <BICFI>AAAAGB2L</BICFI>
+            </FinInstnId>
+        </InstdAgt>
+    </GrpHdr>
+    <CdtTrfTxInf>
+        <PmtId>
+            <InstrId>BBBB/150928-CCT/JPY/123/1</InstrId>
+            <EndToEndId>ABC/4562/2015-09-08</EndToEndId>
+            <TxId>BBBB/150928-CCT/JPY/123/1</TxId>
+        </PmtId>
+        <PmtTpInf>
+            <InstrPrty>NORM</InstrPrty>
+        </PmtTpInf>
+        <IntrBkSttlmAmt Ccy="JPY">10000000</IntrBkSttlmAmt>
+        <IntrBkSttlmDt>2015-09-29</IntrBkSttlmDt>
+        <ChrgBr>SHAR</ChrgBr>
+        <Dbtr>
+            <Nm>ABC Corporation</Nm>
+            <PstlAdr>
+                <StrtNm>Times Square</StrtNm>
+                <BldgNb>7</BldgNb>
+                <PstCd>NY 10036</PstCd>
+                <TwnNm>New York</TwnNm>
+                <Ctry>US</Ctry>
+            </PstlAdr>
+        </Dbtr>
+        <DbtrAcct>
+            <Id>
+                <Othr>
+                    <Id>00125574999</Id>
+                </Othr>
+            </Id>
+        </DbtrAcct>
+        <DbtrAgt>
+            <FinInstnId>
+                <BICFI>BBBBUS33</BICFI>
+            </FinInstnId>
+        </DbtrAgt>
+        <CdtrAgt>
+            <FinInstnId>
+                <BICFI>AAAAGB2L</BICFI>
+            </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+            <Nm>DEF Electronics</Nm>
+            <PstlAdr>
+                <StrtNm>Mark Lane</StrtNm>
+                <BldgNb>55</BldgNb>
+                <PstCd>EC3R7NE</PstCd>
+                <TwnNm>London</TwnNm>
+                <Ctry>GB</Ctry>
+                <AdrLine>Corn Exchange 5th Floor</AdrLine>
+            </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+            <Id>
+                <Othr>
+                    <Id>23683707994215</Id>
+                </Othr>
+            </Id>
+        </CdtrAcct>
+        <Purp>
+            <Cd>GDDS</Cd>
+        </Purp>
+        <RmtInf>
+            <Strd>
+                <RfrdDocInf>
+                    <Tp>
+                        <CdOrPrtry>
+                            <Cd>CINV</Cd>
+                        </CdOrPrtry>
+                    </Tp>
+                    <Nb>4562</Nb>
+                    <RltdDt>2015-09-08</RltdDt>
+                </RfrdDocInf>
+            </Strd>
+        </RmtInf>
+    </CdtTrfTxInf>
+</FIToFICstmrCdtTrf>

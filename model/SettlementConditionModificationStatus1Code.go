@@ -1,0 +1,3 @@
+package model
+
+type SettlementConditionModificationStatus1Code string

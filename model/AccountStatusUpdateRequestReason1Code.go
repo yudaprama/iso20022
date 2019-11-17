@@ -1,0 +1,3 @@
+package model
+
+type AccountStatusUpdateRequestReason1Code string

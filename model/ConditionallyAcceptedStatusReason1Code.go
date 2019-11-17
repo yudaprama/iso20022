@@ -1,0 +1,3 @@
+package model
+
+type ConditionallyAcceptedStatusReason1Code string

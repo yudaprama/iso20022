@@ -1,0 +1,3 @@
+package model
+
+type OrderOriginatorEligibility1Code string

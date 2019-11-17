@@ -1,0 +1,3 @@
+package model
+
+type BeneficiaryCertificationType3Code string

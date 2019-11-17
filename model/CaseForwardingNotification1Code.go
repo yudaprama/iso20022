@@ -1,0 +1,3 @@
+package model
+
+type CaseForwardingNotification1Code string

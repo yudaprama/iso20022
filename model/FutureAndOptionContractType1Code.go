@@ -1,0 +1,3 @@
+package model
+
+type FutureAndOptionContractType1Code string

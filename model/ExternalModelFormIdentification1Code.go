@@ -1,0 +1,3 @@
+package model
+
+type ExternalModelFormIdentification1Code string

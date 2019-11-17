@@ -1,0 +1,3 @@
+package model
+
+type CollateralSubstitutionConfirmation1Code string

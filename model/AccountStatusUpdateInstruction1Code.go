@@ -1,0 +1,3 @@
+package model
+
+type AccountStatusUpdateInstruction1Code string

@@ -1,0 +1,3 @@
+package model
+
+type ExternalTechnicalInputChannel1Code string

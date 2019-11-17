@@ -1,0 +1,3 @@
+package model
+
+type CorporateActionMandatoryVoluntary1Code string

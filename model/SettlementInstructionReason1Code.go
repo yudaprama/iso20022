@@ -1,0 +1,3 @@
+package model
+
+type SettlementInstructionReason1Code string

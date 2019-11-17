@@ -1,0 +1,3 @@
+package model
+
+type TaxIdentificationNumberType1Code string

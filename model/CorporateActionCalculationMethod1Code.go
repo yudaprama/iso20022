@@ -1,0 +1,3 @@
+package model
+
+type CorporateActionCalculationMethod1Code string

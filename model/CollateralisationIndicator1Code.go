@@ -1,0 +1,3 @@
+package model
+
+type CollateralisationIndicator1Code string

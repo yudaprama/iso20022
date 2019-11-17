@@ -1,0 +1,3 @@
+package model
+
+type ExternalAccountIdentification1Code string

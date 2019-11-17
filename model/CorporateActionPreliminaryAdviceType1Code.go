@@ -1,0 +1,3 @@
+package model
+
+type CorporateActionPreliminaryAdviceType1Code string

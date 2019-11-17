@@ -1,0 +1,3 @@
+package model
+
+type UnableToApplyMissingInformation3Code string

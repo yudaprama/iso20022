@@ -1,0 +1,3 @@
+package model
+
+type CorporateActionStatementReportingType1Code string

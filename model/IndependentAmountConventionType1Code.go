@@ -1,0 +1,3 @@
+package model
+
+type IndependentAmountConventionType1Code string

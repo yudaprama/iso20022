@@ -1,0 +1,3 @@
+package model
+
+type CollateralSubstitutionSequence1Code string

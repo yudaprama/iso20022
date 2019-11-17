@@ -1,0 +1,3 @@
+package model
+
+type ISO20022MessageIdentificationText string

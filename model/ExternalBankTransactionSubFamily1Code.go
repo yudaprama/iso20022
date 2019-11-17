@@ -1,0 +1,3 @@
+package model
+
+type ExternalBankTransactionSubFamily1Code string

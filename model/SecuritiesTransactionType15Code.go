@@ -1,0 +1,3 @@
+package model
+
+type SecuritiesTransactionType15Code string

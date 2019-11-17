@@ -1,0 +1,3 @@
+package model
+
+type RegistrationProcessingStatus1Code string

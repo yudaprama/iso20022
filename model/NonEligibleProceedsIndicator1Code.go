@@ -1,0 +1,3 @@
+package model
+
+type NonEligibleProceedsIndicator1Code string

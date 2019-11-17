@@ -1,0 +1,3 @@
+package model
+
+type StatisticalReportingStatus2Code string

@@ -1,0 +1,3 @@
+package model
+
+type IntermediateSecurityDistributionType5Code string

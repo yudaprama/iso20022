@@ -1,0 +1,3 @@
+package model
+
+type ExternalCancellationReason1Code string

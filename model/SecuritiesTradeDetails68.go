@@ -1,0 +1,238 @@
+package model
+
+// Details of the securities trade.
+type SecuritiesTradeDetails68 struct {
+
+	// Identification of an account owner transaction that could potentially match with the allegement notified.
+	AccountOwnerTransactionIdentification *Max35Text `xml:"AcctOwnrTxId,omitempty"`
+
+	// Identification of the transaction as known by the account servicer.
+	AccountServicerTransactionIdentification *Max35Text `xml:"AcctSvcrTxId,omitempty"`
+
+	// Identification of a transaction assigned by a market infrastructure other than a central securities depository, for example, Target2-Securities.
+	MarketInfrastructureTransactionIdentification *Max35Text `xml:"MktInfrstrctrTxId,omitempty"`
+
+	// Identification of the transaction assigned by the processor of the instruction other than the account owner the account servicer and the market infrastructure.
+	ProcessorTransactionIdentification *Max35Text `xml:"PrcrTxId,omitempty"`
+
+	// Reference assigned to the trade by the investor or the trading party. This reference will be used throughout the trade life cycle to access/update the trade details.
+	TradeIdentification []*Max35Text `xml:"TradId,omitempty"`
+
+	// Unique reference agreed upon by the two trade counterparties to identify the trade.
+	CommonIdentification *Max35Text `xml:"CmonId,omitempty"`
+
+	// Collective reference identifying a set of messages.
+	PoolIdentification *Max35Text `xml:"PoolId,omitempty"`
+
+	// Unambiguous identification of a collateral transaction as assigned by the instructing party.
+	CollateralTransactionIdentification []*Max35Text `xml:"CollTxId,omitempty"`
+
+	// Specifies if the movement on a securities account results from a deliver or a receive instruction.
+	SecuritiesMovementType *ReceiveDelivery1Code `xml:"SctiesMvmntTp"`
+
+	// Specifies how the transaction is to be settled, for example, against payment.
+	Payment *DeliveryReceiptType2Code `xml:"Pmt"`
+
+	// Status of the allegement.
+	Status *AllegementStatus3Choice `xml:"Sts,omitempty"`
+
+	// Market in which a trade transaction has been executed.
+	PlaceOfTrade *PlaceOfTradeIdentification1 `xml:"PlcOfTrad,omitempty"`
+
+	// Infrastructure which may be a component of a clearing house and which facilitates clearing and settlement for its members by standing between the buyer and the seller. It may net transactions and it substitutes itself as settlement counterparty for each position.
+	PlaceOfClearing *PlaceOfClearingIdentification1 `xml:"PlcOfClr,omitempty"`
+
+	// Specifies the date/time on which the trade was executed.
+	TradeDate *TradeDate5Choice `xml:"TradDt,omitempty"`
+
+	// Date and time at which the securities are to be delivered or received.
+	SettlementDate *SettlementDate9Choice `xml:"SttlmDt"`
+
+	// Specifies the price of the traded financial instrument.
+	// This is the deal price of the individual trade transaction.
+	// If there is only one trade transaction for the execution of the trade, then the deal price could equal the executed trade price (unless, for example, the price includes commissions or rounding, or some other factor has been applied to the deal price or the executed trade price, or both).
+	DealPrice *Price2 `xml:"DealPric,omitempty"`
+
+	// Number of days on which the interest rate accrues (daily accrual note).
+	NumberOfDaysAccrued *Max3Number `xml:"NbOfDaysAcrd,omitempty"`
+
+	// Financial instruments representing a sum of rights of the investor vis-a-vis the issuer.
+	FinancialInstrumentIdentification *SecurityIdentification19 `xml:"FinInstrmId"`
+
+	// Elements characterising a financial instrument.
+	FinancialInstrumentAttributes *FinancialInstrumentAttributes64 `xml:"FinInstrmAttrbts,omitempty"`
+
+	// Indicates the conditions under which the order/trade is to be/was executed.
+	TradeTransactionCondition []*TradeTransactionCondition5Choice `xml:"TradTxCond,omitempty"`
+
+	// Specifies the type of price and information about the price.
+	TypeOfPrice *TypeOfPrice29Choice `xml:"TpOfPric,omitempty"`
+
+	// Details about the financial instrument quantity and the account involved in the transaction.
+	QuantityAndAccountDetails *QuantityAndAccount45 `xml:"QtyAndAcctDtls"`
+
+	// Details of the closing of the securities financing transaction.
+	SecuritiesFinancingDetails *SecuritiesFinancingTransactionDetails29 `xml:"SctiesFincgDtls,omitempty"`
+
+	// Parameters applied to the settlement of a security transfer.
+	SettlementParameters *SettlementDetails125 `xml:"SttlmParams"`
+
+	// Identifies the chain of delivering settlement parties.
+	DeliveringSettlementParties *SettlementParties36 `xml:"DlvrgSttlmPties,omitempty"`
+
+	// Identifies the chain of receiving settlement parties.
+	ReceivingSettlementParties *SettlementParties36 `xml:"RcvgSttlmPties,omitempty"`
+
+	// Total amount of money to be paid or received in exchange for the securities.
+	SettlementAmount *AmountAndDirection48 `xml:"SttlmAmt,omitempty"`
+
+	// Other amounts than the settlement amount.
+	OtherAmounts *OtherAmounts32 `xml:"OthrAmts,omitempty"`
+
+	// Other business parties relevant to the transaction.
+	OtherBusinessParties *OtherParties28 `xml:"OthrBizPties,omitempty"`
+
+	// Additional information that cannot be captured in the structured elements and/or any other specific block.
+	SupplementaryData []*SupplementaryData1 `xml:"SplmtryData,omitempty"`
+}
+
+func (s *SecuritiesTradeDetails68) SetAccountOwnerTransactionIdentification(value string) {
+	s.AccountOwnerTransactionIdentification = (*Max35Text)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) SetAccountServicerTransactionIdentification(value string) {
+	s.AccountServicerTransactionIdentification = (*Max35Text)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) SetMarketInfrastructureTransactionIdentification(value string) {
+	s.MarketInfrastructureTransactionIdentification = (*Max35Text)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) SetProcessorTransactionIdentification(value string) {
+	s.ProcessorTransactionIdentification = (*Max35Text)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) AddTradeIdentification(value string) {
+	s.TradeIdentification = append(s.TradeIdentification, (*Max35Text)(&value))
+}
+
+func (s *SecuritiesTradeDetails68) SetCommonIdentification(value string) {
+	s.CommonIdentification = (*Max35Text)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) SetPoolIdentification(value string) {
+	s.PoolIdentification = (*Max35Text)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) AddCollateralTransactionIdentification(value string) {
+	s.CollateralTransactionIdentification = append(s.CollateralTransactionIdentification, (*Max35Text)(&value))
+}
+
+func (s *SecuritiesTradeDetails68) SetSecuritiesMovementType(value string) {
+	s.SecuritiesMovementType = (*ReceiveDelivery1Code)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) SetPayment(value string) {
+	s.Payment = (*DeliveryReceiptType2Code)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) AddStatus() *AllegementStatus3Choice {
+	s.Status = new(AllegementStatus3Choice)
+	return s.Status
+}
+
+func (s *SecuritiesTradeDetails68) AddPlaceOfTrade() *PlaceOfTradeIdentification1 {
+	s.PlaceOfTrade = new(PlaceOfTradeIdentification1)
+	return s.PlaceOfTrade
+}
+
+func (s *SecuritiesTradeDetails68) AddPlaceOfClearing() *PlaceOfClearingIdentification1 {
+	s.PlaceOfClearing = new(PlaceOfClearingIdentification1)
+	return s.PlaceOfClearing
+}
+
+func (s *SecuritiesTradeDetails68) AddTradeDate() *TradeDate5Choice {
+	s.TradeDate = new(TradeDate5Choice)
+	return s.TradeDate
+}
+
+func (s *SecuritiesTradeDetails68) AddSettlementDate() *SettlementDate9Choice {
+	s.SettlementDate = new(SettlementDate9Choice)
+	return s.SettlementDate
+}
+
+func (s *SecuritiesTradeDetails68) AddDealPrice() *Price2 {
+	s.DealPrice = new(Price2)
+	return s.DealPrice
+}
+
+func (s *SecuritiesTradeDetails68) SetNumberOfDaysAccrued(value string) {
+	s.NumberOfDaysAccrued = (*Max3Number)(&value)
+}
+
+func (s *SecuritiesTradeDetails68) AddFinancialInstrumentIdentification() *SecurityIdentification19 {
+	s.FinancialInstrumentIdentification = new(SecurityIdentification19)
+	return s.FinancialInstrumentIdentification
+}
+
+func (s *SecuritiesTradeDetails68) AddFinancialInstrumentAttributes() *FinancialInstrumentAttributes64 {
+	s.FinancialInstrumentAttributes = new(FinancialInstrumentAttributes64)
+	return s.FinancialInstrumentAttributes
+}
+
+func (s *SecuritiesTradeDetails68) AddTradeTransactionCondition() *TradeTransactionCondition5Choice {
+	newValue := new(TradeTransactionCondition5Choice)
+	s.TradeTransactionCondition = append(s.TradeTransactionCondition, newValue)
+	return newValue
+}
+
+func (s *SecuritiesTradeDetails68) AddTypeOfPrice() *TypeOfPrice29Choice {
+	s.TypeOfPrice = new(TypeOfPrice29Choice)
+	return s.TypeOfPrice
+}
+
+func (s *SecuritiesTradeDetails68) AddQuantityAndAccountDetails() *QuantityAndAccount45 {
+	s.QuantityAndAccountDetails = new(QuantityAndAccount45)
+	return s.QuantityAndAccountDetails
+}
+
+func (s *SecuritiesTradeDetails68) AddSecuritiesFinancingDetails() *SecuritiesFinancingTransactionDetails29 {
+	s.SecuritiesFinancingDetails = new(SecuritiesFinancingTransactionDetails29)
+	return s.SecuritiesFinancingDetails
+}
+
+func (s *SecuritiesTradeDetails68) AddSettlementParameters() *SettlementDetails125 {
+	s.SettlementParameters = new(SettlementDetails125)
+	return s.SettlementParameters
+}
+
+func (s *SecuritiesTradeDetails68) AddDeliveringSettlementParties() *SettlementParties36 {
+	s.DeliveringSettlementParties = new(SettlementParties36)
+	return s.DeliveringSettlementParties
+}
+
+func (s *SecuritiesTradeDetails68) AddReceivingSettlementParties() *SettlementParties36 {
+	s.ReceivingSettlementParties = new(SettlementParties36)
+	return s.ReceivingSettlementParties
+}
+
+func (s *SecuritiesTradeDetails68) AddSettlementAmount() *AmountAndDirection48 {
+	s.SettlementAmount = new(AmountAndDirection48)
+	return s.SettlementAmount
+}
+
+func (s *SecuritiesTradeDetails68) AddOtherAmounts() *OtherAmounts32 {
+	s.OtherAmounts = new(OtherAmounts32)
+	return s.OtherAmounts
+}
+
+func (s *SecuritiesTradeDetails68) AddOtherBusinessParties() *OtherParties28 {
+	s.OtherBusinessParties = new(OtherParties28)
+	return s.OtherBusinessParties
+}
+
+func (s *SecuritiesTradeDetails68) AddSupplementaryData() *SupplementaryData1 {
+	newValue := new(SupplementaryData1)
+	s.SupplementaryData = append(s.SupplementaryData, newValue)
+	return newValue
+}

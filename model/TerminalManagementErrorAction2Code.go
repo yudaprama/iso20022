@@ -1,0 +1,3 @@
+package model
+
+type TerminalManagementErrorAction2Code string

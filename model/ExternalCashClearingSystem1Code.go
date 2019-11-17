@@ -1,0 +1,3 @@
+package model
+
+type ExternalCashClearingSystem1Code string

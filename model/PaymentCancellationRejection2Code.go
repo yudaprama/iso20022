@@ -1,0 +1,3 @@
+package model
+
+type PaymentCancellationRejection2Code string

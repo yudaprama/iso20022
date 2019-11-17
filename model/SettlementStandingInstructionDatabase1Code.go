@@ -1,0 +1,3 @@
+package model
+
+type SettlementStandingInstructionDatabase1Code string

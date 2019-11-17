@@ -1,0 +1,3 @@
+package model
+
+type CounterpartyResponseStatusReason1Code string

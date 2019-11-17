@@ -1,0 +1,3 @@
+package model
+
+type SecuritiesFinancingTransactionType1Code string

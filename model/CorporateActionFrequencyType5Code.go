@@ -1,0 +1,3 @@
+package model
+
+type CorporateActionFrequencyType5Code string
