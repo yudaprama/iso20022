@@ -1,4 +1,4 @@
-package examples
+package main
 
 import (
 	"encoding/xml"
@@ -15,12 +15,13 @@ func main() {
 		os.Exit(1)
 	}
 
-	var messageParsed pacs.Document00800106
+	var messageParsed pacs.FIToFICustomerCreditTransferV06
 	err = xml.Unmarshal(messages, &messageParsed)
 	if err != nil {
 		log.Fatalf("Unable to parse file:  %v", err)
 		os.Exit(1)
 	}
-	
-	log.Printf("Interbank Settlement Date:  %v", messageParsed.Message.GroupHeader.InterbankSettlementDate)
+
+	log.Printf("Interbank settlement amount:  %v", messageParsed.CreditTransferTransactionInformation[0].InterbankSettlementAmount.Value)
+	log.Printf("Interbank settlement currency:  %v", messageParsed.CreditTransferTransactionInformation[0].InterbankSettlementAmount.Currency)
 }
