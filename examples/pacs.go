@@ -22,6 +22,12 @@ func main() {
 		os.Exit(1)
 	}
 
-	log.Printf("Interbank settlement amount:  %v", messageParsed.CreditTransferTransactionInformation[0].InterbankSettlementAmount.Value)
-	log.Printf("Interbank settlement currency:  %v", messageParsed.CreditTransferTransactionInformation[0].InterbankSettlementAmount.Currency)
+	log.Printf("nama pengirim:  %v", *messageParsed.CreditTransferTransactionInformation[0].Creditor.Name)
+	log.Printf("alamat pengirim:  %v", *messageParsed.CreditTransferTransactionInformation[0].Creditor.PostalAddress.StreetName)
+	log.Printf("negara pengirim:  %v", *messageParsed.CreditTransferTransactionInformation[0].Creditor.PostalAddress.Country)
+	log.Printf("nama penerima:  %v", *messageParsed.CreditTransferTransactionInformation[0].Debtor.Name)
+	log.Printf("alamat penerima:  %v", *messageParsed.CreditTransferTransactionInformation[0].Debtor.PostalAddress.StreetName)
+	log.Printf("negara penerima:  %v", *messageParsed.CreditTransferTransactionInformation[0].Debtor.PostalAddress.Country)
+	log.Printf("amount:  %v", messageParsed.CreditTransferTransactionInformation[0].InterbankSettlementAmount.Value)
+	log.Printf("currency:  USD")
 }
