@@ -19,7 +19,7 @@ type ReportEntry8 struct {
 	ReversalIndicator *TrueFalseIndicator `xml:"RvslInd,omitempty"`
 
 	// Status of an entry on the books of the account servicer.
-	Status *EntryStatus2Code `xml:"Sts"`
+	Status *EntryStatus1Choice `xml:"Sts"`
 
 	// Date and time when an entry is posted to an account on the account servicer's books.
 	//
@@ -94,8 +94,9 @@ func (r *ReportEntry8) SetReversalIndicator(value string) {
 	r.ReversalIndicator = (*TrueFalseIndicator)(&value)
 }
 
-func (r *ReportEntry8) SetStatus(value string) {
-	r.Status = (*EntryStatus2Code)(&value)
+func (r *ReportEntry8) SetStatus(cd, prtry string) {
+	r.Status.Cd = (*ExternalEntryStatus1Code)(&cd)
+	r.Status.Prtry = (*Max35Text)(&prtry)
 }
 
 func (r *ReportEntry8) AddBookingDate() *DateAndDateTimeChoice {
